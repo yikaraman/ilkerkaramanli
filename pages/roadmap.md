@@ -46,7 +46,7 @@ permalink: "/roadmap/"
 * <s>Patterns for header</s>
 * <s>Clean up color scheme and highlighting colors</s>
 * <s>Make theme translation ready</s>
-* [<s>Add draft-templates for new pages/posts</s>](https://github.com/Phlow/feeling-responsive/tree/gh-pages/_drafts)
+* [<s>Add draft-templates for new pages/posts</s>](https://github.com/yikaraman/kayraxewebsite/tree/gh-pages/_drafts)
 * [<s>Step-by-Step-Guide to customize *Feeling Responsive*</s>]({{ site.url }}/getting-started/)
 * [<s>Video-Post-Format to feature videos in a huge way</s>]({{ site.url }}/design/video/)
 * <s>Title and captions for images</s>
