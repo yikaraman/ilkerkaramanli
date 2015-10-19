@@ -11,13 +11,13 @@ header:
 
 ## Programming Languages
 Java
-• Java Standard Edition,
-• JSF 2.0 with Rich Faces 4
-• JP A 2.0 Apps with Hibernate 3
-• Java Server Pages
-• Spring 3.0 Fundamentals
-• Java Web services
-• Multithreading, Concurrency
+* Java Standard Edition,
+* JSF 2.0 with Rich Faces 4
+* JP A 2.0 Apps with Hibernate 3
+* Java Server Pages
+* Spring 3.0 Fundamentals
+* Java Web services
+* Multithreading, Concurrency
 C/C++ C# MATLAB
 
 ## Mobile Applications
@@ -32,7 +32,7 @@ MySQL, PL/SQL (Oracle 11G)
 ## Tools
 Eclipse, Jira, IBM Rational Clear case, Jenkins, IDCE, Visual Studio, GIT, Gradle, Maven, Ant
 
-## Operating Systems
+# Operating Systems
 MAC OS X Yosemite, Windows Server 2008, Windows, Linux, Solaris
 
 ## Projects

@@ -15,11 +15,11 @@ widget1:
 widget2:
   title: "Portfolio"
   url: 'http://yikaraman.github.io/kayraxewebsite/info/'
-  image: widget-1-302x182.jpg
+  image: computer-software-text.jpg
   text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
 widget3:
   title: "Blog"
-  url: 'https://github.com/yikaraman/kayraxewebsite/blog'
+  url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
   image: widget-github-303x182.jpg
   text: '<em>Suggest a subject!!</em> Tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
 permalink: /index.html
