@@ -36,4 +36,3 @@
 {% if prev_post %}
 <a class="button tiny radius" href="{{ prev_post }}">{{ site.data.language.previous_post_in }} {{ cat | upcase }}<span class="icon-chevron-right"></span></a>
 {% endif %}
-

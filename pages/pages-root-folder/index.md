@@ -9,7 +9,7 @@ header:
   image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "ilker Karamanli"
-  url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
+  url: 'http://yikaraman.github.io/kayraxewebsite/index/'
   image: widget-1-302x182.jpg
   text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
 widget2:
@@ -20,7 +20,7 @@ widget2:
 widget3:
   title: "Blog"
   url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
-  image: widget-github-303x182.jpg
+  image: blogging-apps..jpg
   text: '<em>Suggest a subject!!</em> Tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
 permalink: /index.html
 ---

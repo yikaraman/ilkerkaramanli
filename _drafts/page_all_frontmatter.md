@@ -7,9 +7,9 @@ subheadline: ""
 title: ""
 teaser: ""
 categories:
-  - 
+  -
 tags:
-  - 
+  -
 #
 # Styling
 #
@@ -47,4 +47,3 @@ meta_description:
 permalink:
 tawkto: true               # Enable tawk.to-Service › More › _config.yml
 ---
-
