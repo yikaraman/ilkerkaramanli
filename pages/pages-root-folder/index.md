@@ -9,18 +9,17 @@ header:
   image_fullwidth: header_unsplash_12.jpg
 widget1:
   title: "ilker Karamanli"
-  url: 'http://yikaraman.github.io/kayraxewebsite/index/'
-  image: widget-1-302x182.jpg
-  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
+  image: ilkerk.jpg
+  text: 'Hello, I am a Senior software developer/Scrum Master. I have always had a passion for development. I have been working in Telecommunication sector. I now have 5 years experience in the industry. I have experience about SIP Protocols, IMS and Web technologies.'
 widget2:
   title: "Portfolio"
   url: 'http://yikaraman.github.io/kayraxewebsite/info/'
   image: computer-software-text.jpg
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
+  text: 'Mostly includes my profesional experience. This part is also heavily include my programming Skills. For further individual project details, you can check my <a href="http://github.com/yikaraman/"> GitHub Profile</a>.'
 widget3:
   title: "Blog"
   url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
   image: blogging-apps..jpg
-  text: '<em>Suggest a subject!!</em> Tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
+  text: 'I love to work with open source tools and learn via code from others. This time I want to try to give something back... if you have a  <em>suggestion about any subject,</em> you can tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
 permalink: /index.html
 ---
