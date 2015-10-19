@@ -19,7 +19,7 @@ widget2:
 widget3:
   title: "Blog"
   url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
-  image: blogging-apps..jpg
+  image: blogging-apps.jpg
   text: 'I love to work with open source tools and learn via code from others. This time I want to try to give something back... if you have a  <em>suggestion about any subject,</em> you can tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
 permalink: /index.html
 ---
