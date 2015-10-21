@@ -3,6 +3,11 @@
   class: icon-github
   title: Coding is the life Style
 
+ - name: Linkedin
+   url: https://tr.linkedin.com/in/yikaraman
+   class: icon-linkedin
+   title: "Linkedin"
+
 - name: Facebook
   url: http://www.facebook.com/feargrabs
   class: icon-facebook
@@ -17,6 +22,11 @@
   url: http://instagram.com/kayraxe
   class: icon-instagram
   title: "Trendsetter"
+
+
+linkedin
+
+
 
 # - name: Facebook
 #   url: http://www.facebook.com/
