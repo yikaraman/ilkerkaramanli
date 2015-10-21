@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Hello World"
+subheadline: "Reading"
 title: "Everything begins with only two word"
 teaser: "\"Hello World\" is the first program one usually writes.."
 header:
@@ -19,11 +19,6 @@ show_meta: false
 The quote “Hello world!” has been used since the 1960’s as the output of the first program written by most developers. Outputting this simple line of text is generally easy enough for beginners to accomplish, and it also serves as a sanity test to make sure that a given compiler, environment and associated run-times are correctly installed and functioning. As such, it’s also an apt title for the first post on a newly-created website. This is one such post.
 
 Having first been mentioned in Brian Kernighan's tutorial to the B programming language, it became widely known through Kernighan & Ritchie's 1978 book that introduced "The C Programming Language", where it read like this:
-
-<span class="teaser">
-main() {<br>
-   <t> printf("hello, world\n");<br>
-}</span><br>
 
 ~~~
 main() {
