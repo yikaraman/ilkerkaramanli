@@ -23,7 +23,14 @@ Having first been mentioned in Brian Kernighan's tutorial to the B programming l
 <span class="teaser">
 main() {<br>
    <t> printf("hello, world\n");<br>
-}</span><br><cite>[EKernighan & Ritchie's 1978 book][1]</cite>
+}</span><br>
+
+~~~
+main() {
+    printf("hello, world\n");
+}
+~~~
+<cite>[EKernighan & Ritchie's 1978 book][1]</cite><br>
 
 
 Since then, Hello World has been implemented in just about every programming language on the planet. This collection includes 493 Hello World programs in as many more-or-less well known programming languages, plus 69 human languages.
