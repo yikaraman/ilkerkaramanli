@@ -11,7 +11,7 @@ image:
     thumb:  Hello-World-graph.png
     homepage: Hello-World.png
 categories:
-    - Welcome
+    - Reading
 comments: true
 show_meta: false
 ---
