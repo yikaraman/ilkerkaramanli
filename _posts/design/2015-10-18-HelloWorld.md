@@ -9,7 +9,7 @@ header:
     caption_url: "http://ticketsynergy.com/2015/06/hello-world/"
 image:
     thumb:  Hello-World-graph.png
-    homepage: Hello-World-graph.png
+    homepage: Hello-World.png
 categories:
     - Welcome
 comments: true
