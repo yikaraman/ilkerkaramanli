@@ -21,9 +21,9 @@ The quote “Hello world!” has been used since the 1960’s as the output of t
 Having first been mentioned in Brian Kernighan's tutorial to the B programming language, it became widely known through Kernighan & Ritchie's 1978 book that introduced "The C Programming Language", where it read like this:
 
 <span class="teaser">
-main() {
-    printf("hello, world\n");
-}</span><cite>[EKernighan & Ritchie's 1978 book][1]</cite>
+main() {<br>
+   <t> printf("hello, world\n");<br>
+}</span><br><cite>[EKernighan & Ritchie's 1978 book][1]</cite>
 
 
 Since then, Hello World has been implemented in just about every programming language on the planet. This collection includes 493 Hello World programs in as many more-or-less well known programming languages, plus 69 human languages.
