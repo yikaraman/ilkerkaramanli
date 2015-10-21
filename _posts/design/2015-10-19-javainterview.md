@@ -4,12 +4,12 @@ subheadline: "Interview"
 title: "General Questions about Java"
 teaser: "Basic Questions about Java Job Interview..."
 header:
-    image_fullwidth: "java.png"
-    caption: Image by Ticket Synergy
-    caption_url: "http://ticketsynergy.com/2015/06/hello-world/"
+    image_fullwidth: "java.jpg"
+    caption:
+    caption_url: ""
 image:
     thumb:  java-thumb.jpg
-    homepage: job-interview.jpg
+    homepage: business.jpg
 categories:
     - Interview
 comments: true
