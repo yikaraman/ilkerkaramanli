@@ -1,0 +1,19 @@
+---
+layout: page
+subheadline: "Interview"
+title: "General Questions about Java"
+teaser: "Basic Questions about Java Job Interview..."
+header:
+    image_fullwidth: "java.jpg"
+    caption:
+    caption_url: ""
+image:
+    thumb:  java-thumb.jpg
+    homepage: business.jpg
+categories:
+    - Interview
+comments: true
+show_meta: false
+---
+
+Ahmet Welcome to World
