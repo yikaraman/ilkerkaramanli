@@ -8,6 +8,11 @@
   class: icon-facebook
   title: "Facebook"
 
+- name: Linkedin
+  url: https://tr.linkedin.com/in/yikaraman
+  class: icon-linkedin
+  title: "Linkedin"
+
 - name: Twitter
   url: http://twitter.com/kayraxe
   class: icon-twitter
