@@ -1,50 +1,9 @@
 
-[![Start Video](https://github.com/yikaraman/kayraxewebsite/blob/gh-pages/images/video-feeling-responsive-1280x720.jpg)](https://www.youtube.com/embed/3b5zCFSmVvU)
 
-## A Responsive Jekyll Theme: *Feeling Responsive*
+## My Personal Web Page
 
-Do you want to get to know *Feeling Responsive*? Than check it out first and have a look on its home at  <http://yikaraman.github.io/kayraxewebsite/>.
+For my website, I will choose very simple template to identify functionalities.  Basic functionality of this web site should provide personal information, projects and programming skillset.  The audience of my personal website are employee hunters, freelance design developers and self-improve developers. Especially, employee hunters checking thousands resumes in a day. Hence, the information that I provide should be simple, meaningful and easy to find. That’s why; I must design my portfolio such as projects, Programming skillset in a table. At a glance, to many information must be grabbed by a people who are seeking my website.
 
-To get to know *Feeling Responsive* check out all the features explained in the [documentation][1].
+In my experience, I spent so much time in searching important part of information for me in websites. That’s why, I try to give pay attention to provide important information highlighted or put in a box. With that solution, the answer of what people are looking for can be found highlighted easily. I try not to provide so many sub-menus in my website. Because it makes navigating in the website that you don’t visit much, makes harder than ever.
 
-And what license is *Feeling Responsive* released under? [This one][2].
-
-
-
-## Why use this theme?
-
-Feeling Responsive is heavily customizable.
-
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
-
-**[More ›][3]**
-
-
-
-## Video Tutorial
-
-Click the image to [watch the YouTube-Video-Tutorial][4].
-
-[![Start Video](https://github.com/yikaraman/kayraxewebsite/blob/gh-pages/images/video-feeling-responsive-tutorial-frontpage.jpg)](https://www.youtube.com/watch?v=rLS-BEvlEyY)
-
-
-
-
-
-
-
-
- [1]: http://yikaraman.github.io/kayraxewebsite/documentation/
- [2]: https://github.com/yikaraman/kayraxewebsite/blob/gh-pages/LICENSE
- [3]: http://yikaraman.github.io/kayraxewebsite/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: #
- [6]: #
- [7]: #
- [8]: #
- [9]: #
- [10]: #
+I will design a website that include my personal essays, discussions or reviews in a blog part.  Especially, for the discussion part, I’m considering that implementing a dialogs and discussion part at the end of the readings. That helps me interaction with developers and sharing ideas. For the time constraints, I believe I won’t have time to provide so many interesting and scientific reading parts yet. However, I assume, my blog will be in good shape in time.
