@@ -2,7 +2,7 @@
 layout: page
 subheadline: "Reading"
 title: "What is interaction Design"
-teaser: "Interaction Design - Chaper 1 - What is interaction Design"
+teaser: "Interaction Design - Chapter 1 - What is interaction Design"
 header:
     image_fullwidth: "interaction-banner.jpg"
     caption: Image by Ticket Synergy
@@ -26,12 +26,10 @@ Marble answering Machine is considered a design classic. (Designed by Durrell Bi
 Designing interactive products to support the way people communicate and interact in their everyday and working lives.
 
 Goals of interaction design
-
 - Develop usable products
 - Involve users in the design process
 
 Academic disciplines contributing to ID:
-
 - Psychology
 - Social Sciences
 - Computing Sciences
@@ -40,7 +38,6 @@ Academic disciplines contributing to ID:
 - Informatics
 
 Design practices contributing to ID:
-
 - Graphic design
 - Product design
 - Artist-design
@@ -51,7 +48,6 @@ Design practices contributing to ID:
 Every product that is used by someone has a user experience: newspapers, ketchup bottles, reclining armchairs, cardigan sweaters.
 
 McCarthy and Wright propose four core threads that make up our holistic experience.
-
 - The Sensual Thread
 - The Emotional Thread
 - The Compositional Thread
@@ -59,7 +55,6 @@ McCarthy and Wright propose four core threads that make up our holistic experien
 
 <strong>1.5 The Process of Interaction Design</strong><br>
 The process of interaction design involves four basic activities
-
 - Establishing requiremetns
 - Designing Alternatives
 - Prototyping
@@ -68,7 +63,6 @@ The process of interaction design involves four basic activities
 <strong>1.6 Interaction Design and the User Experience</strong><br>
 
 Usability Goals:
-
 - effective to use (effectiveness)
 - efficient to use(efficiency)
 - safe to use(safety)
@@ -77,7 +71,6 @@ Usability Goals:
 - easy to remember how to use (memorability)
 
 Most Common design principles
-
 - Visibility
 - Feedback
 - Constraints
