@@ -16,20 +16,20 @@ comments: true
 show_meta: false
 ---
 
-<strong>Void</strong>
-The Void class has one field, TYPE, which holds a reference to the Class object for type void. You do not create instances of this class.
+Void
+:  The Void class has one field, TYPE, which holds a reference to the Class object for type void. You do not create instances of this class.
 
-<strong>Process</strong>
-The abstract Process class encapsulates a process—that is, an executing program. It is used primarily as a superclass for the type of objects created by exec( ) in the Runtime class, or by start( ) in the ProcessBuilder class.
+Process
+:  The abstract Process class encapsulates a process—that is, an executing program. It is used primarily as a superclass for the type of objects created by exec( ) in the Runtime class, or by start( ) in the ProcessBuilder class.
 
-<strong>Runtime</strong>
-The Runtime class encapsulates the run-time environment. You cannot instantiate a Runtime object. However, you can get a reference to the current Runtime object by calling the static method Runtime.getRuntime( ). Once you obtain a reference to the current Runtime object, you can call several methods that control the state and behavior of the Java Virtual Machine.
+Runtime
+:  The Runtime class encapsulates the run-time environment. You cannot instantiate a Runtime object. However, you can get a reference to the current Runtime object by calling the static method Runtime.getRuntime( ). Once you obtain a reference to the current Runtime object, you can call several methods that control the state and behavior of the Java Virtual Machine.
 
-<strong>Memory Management</strong>
-use the totalMemory( ) and freeMemory( ) methods.
+Memory Management
+:   use the totalMemory( ) and freeMemory( ) methods.
 
-<strong>ProcessBuilder</strong>
-ProcessBuilder provides another way to start and manage processes (that is, programs). all processes are represented by the Process class, and a process can be started by Runtime.exec( ). ProcessBuilder offers more control over the processes.
+ProcessBuilder
+:   ProcessBuilder provides another way to start and manage processes (that is, programs). all processes are represented by the Process class, and a process can be started by Runtime.exec( ). ProcessBuilder offers more control over the processes.
 
 ProcessBuilder defines these constructors:
 
@@ -38,14 +38,14 @@ ProcessBuilder(List<String> args)
 ProccessBuilder(String ... args)
 ~~~
 
-<strong>System</strong>
-The System class holds a collection of static methods and variables. The standard input, output, and error output of the Java run time are stored in the in, out, and err variables.
+System
+:  The System class holds a collection of static methods and variables. The standard input, output, and error output of the Java run time are stored in the in, out, and err variables.
 
-<strong>Class</strong>
-Class encapsulates the run-time state of a class or interface. Objects of type Class are created automatically, when classes are loaded. You cannot explicitly declare a Class object. Generally, you obtain a Class object by calling the getClass( ) method defined by Object.
+Class
+:  Class encapsulates the run-time state of a class or interface. Objects of type Class are created automatically, when classes are loaded. You cannot explicitly declare a Class object. Generally, you obtain a Class object by calling the getClass( ) method defined by Object.
 
-<strong>Thread, ThreadGroup, and Runnable</strong>
-The Runnable interface and the Thread and ThreadGroup classes support multithreaded programming.
+Thread, ThreadGroup, and Runnable
+:  The Runnable interface and the Thread and ThreadGroup classes support multithreaded programming.
 
 ~~~
 Thread( )
