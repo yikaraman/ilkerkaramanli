@@ -8,7 +8,7 @@ header:
     caption: Image by Ticket Synergy
     caption_url: "http://ticketsynergy.com/2015/06/hello-world/"
 image:
-    thumb:  interactionDesign.png
+    thumb:  interaction-thumb.jpg
     homepage: interactionDesign.png
 categories:
     - Reading
@@ -26,10 +26,12 @@ Marble answering Machine is considered a design classic. (Designed by Durrell Bi
 Designing interactive products to support the way people communicate and interact in their everyday and working lives.
 
 Goals of interaction design
+
 - Develop usable products
 - Involve users in the design process
 
 Academic disciplines contributing to ID:
+
 - Psychology
 - Social Sciences
 - Computing Sciences
@@ -38,6 +40,7 @@ Academic disciplines contributing to ID:
 - Informatics
 
 Design practices contributing to ID:
+
 - Graphic design
 - Product design
 - Artist-design
@@ -48,6 +51,7 @@ Design practices contributing to ID:
 Every product that is used by someone has a user experience: newspapers, ketchup bottles, reclining armchairs, cardigan sweaters.
 
 McCarthy and Wright propose four core threads that make up our holistic experience.
+
 - The Sensual Thread
 - The Emotional Thread
 - The Compositional Thread
@@ -55,6 +59,7 @@ McCarthy and Wright propose four core threads that make up our holistic experien
 
 <strong>1.5 The Process of Interaction Design</strong><br>
 The process of interaction design involves four basic activities
+
 - Establishing requiremetns
 - Designing Alternatives
 - Prototyping
