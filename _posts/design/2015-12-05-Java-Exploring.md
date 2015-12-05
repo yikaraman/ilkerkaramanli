@@ -8,7 +8,7 @@ header:
     caption: Image by Ticket Synergy
     caption_url: "http://ticketsynergy.com/2015/06/hello-world/"
 image:
-    thumb:  java-thumb.jpg
+    thumb:  java-thumb.png
     homepage: java_home.jpg
 categories:
     - Reading
