@@ -9,14 +9,14 @@ header:
 ---
 
 | Job Experience
------------------------------------------ | -----------------------------------------------------------------
-<strong>Netas AS. R&D</strong><br>Since April 2011 (5 Years) | <em>Junior Software Developer – April 2011 to March 2013 (2 years)</em><br>-Accomplish assigned tasks by Scrum Master on planned timeframe, and ensure quality in each task.<br>• Investigating and learning the basic architectural concepts of the component being worked on and working towards owning new code modules.<br>• Accomplish assigned tasks by Scrum Master on planned timeframe with almost no supervision, take initiatives to identify tasks to complete assignments and ensure quality in each task.<br>• Fix assigned issues by sustaining prime on planned timeframe, follow sustaining process and ensure quality in each fix.
+----------------------------------------- | ---------------------------------------------------
+<strong>Netas AS. R&D</strong><br>Since April 2011 (5 Years) | <em>Junior Software Developer – April 2011 to March 2013 (2 years)</em><br>• Accomplish assigned tasks by Scrum Master on planned timeframe, and ensure quality in each task.<br>• Investigating and learning the basic architectural concepts of the component being worked on and working towards owning new code modules.<br>• Accomplish assigned tasks by Scrum Master on planned timeframe with almost no supervision, take initiatives to identify tasks to complete assignments and ensure quality in each task.<br>• Fix assigned issues by sustaining prime on planned timeframe, follow sustaining process and ensure quality in each fix.
 <strong>TEIAS (Turkish Electricity Transmission Co.)</strong><br>07.2010-09.2010 | <em>Java Software Developer</em><br> I learned JSF (Java Server Pages. When I'm familiar with java. I do start projects that are including Java developing by using our database and some applets, which includes web services. Also many useful codes written in JSF.
 <strong>Harrah’s Casino</strong><br>06.2008-09.2008 | <em>BlackJack Dealer</em><br>  I attended Work and Travel program for 3 times last of them was Harrah’s casino. What I do that in casino is help others to be better personality and professionally. Giving information about responsible gaming. To solve problems of the customer. The job is not only becomes a dealer but also communication with people.
 
 
 |Soft Skills
------------------------------------------ | -----------------------------------------------------------------
+----------------------------------------- | ---------------------------------------------------
 Programming Languages | Java<br> * Java Standard Edition,<br> * JSF 2.0 with Rich Faces 4<br> * JP A 2.0 Apps with Hibernate 3<br> * Java Server Pages<br> * Spring 3.0 Fundamentals<br> * Java Web services<br> * Multithreading, Concurrency<br> C/C++ C# MATLAB
 Mobile Applications | Objective C, Swift 2.0, Android
 Markup Languages | HTML, XHTML, XML, Shell Script
@@ -28,7 +28,7 @@ Operating Systems | MAC OS X Yosemite, Windows Server 2008, Windows, Linux, Sola
 :    Communication Systems, Signals, Neural Network, Computer based languages, Web Development, Digital Image Processing, Operating System, Fiber optic Communication, Java, Database Management, Computer Networks, Radar, Microelectronics Circuits, RF and Microwave Engineering, Control Systems, VLSI, Computer Networks, Operating Systems.
 
 | Projects
------------------------------------------ | -----------------------------------------------------------------
+----------------------------------------- | ---------------------------------------------------
 <strong>S3 Integration with SIPPBX</strong><br><em>Developer</em>  | The intent of this feature is to provide for the integration testing of the Genband S3 and S9 Session Border Controller products in the IMS and pre IMS A2 based solutions.
 <strong>3GPP Header Compliancy and Architectural Improvements </strong><br><em>  Developer</em>  | Call Process Architectural Improvements: Within this part, Signal Framework Enhancements and MsgValidator Enhancements
 <strong>Test Automation Framework </strong><br><em>Scrum Master/ Architect</em>  | For continuous Integration Framework development by using JUnit, JAIN-SIP, JMF and many Third party libraries.
