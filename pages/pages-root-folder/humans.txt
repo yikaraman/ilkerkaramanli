@@ -18,7 +18,7 @@ Name: Moritz »mo.« Sauer
 Role: Creator of the Theme
 Site: http://mo.phlow.de/
 Twitter: @phlow
-Theme: http://yikaraman.github.io/kayraxewebsite/
+Theme: http://yikaraman.github.io/ilkerkaramanli/
 
 
 /* SITE */

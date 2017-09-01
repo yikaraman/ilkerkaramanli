@@ -13,12 +13,12 @@ widget1:
   text: 'Hello, I am a Senior software developer/Scrum Master. I have always had a passion for development. I have been working in Telecommunication sector. I now have 5 years experience in the industry. I have experience about SIP Protocols, IMS and Web technologies.'
 widget2:
   title: "Portfolio"
-  url: 'http://yikaraman.github.io/kayraxewebsite/info/'
+  url: 'http://yikaraman.github.io/ilkerkaramanli/info/'
   image: computer.jpg
   text: 'Mostly includes my profesional experience. This part is also heavily include my programming Skills. For further individual project details, you can check my <a href="http://github.com/yikaraman/"> GitHub Profile</a>.'
 widget3:
   title: "Blog"
-  url: 'http://yikaraman.github.io/kayraxewebsite/blog/'
+  url: 'http://yikaraman.github.io/ilkerkaramanli/blog/'
   image: blog.jpg
   text: 'I love to work with open source tools and learn via code from others. This time I want to try to give something back... if you have a  <em>suggestion about any subject,</em> you can tell me via Twitter <a href="http://twitter.com/kayraxe">@kayraxe</a>.'
 permalink: /index.html

@@ -1,7 +1,7 @@
 ---
 layout: page
 show_meta: false
-title: "yikaraman.github.io/kayraxewebsite/"
+title: "yikaraman.github.io/ilkerkaramanli/"
 subheadline: "A Step-by-Step Guide"
 teaser: "This step-by-step guide helps you to customize Feeling Responsive to your needs."
 header:
