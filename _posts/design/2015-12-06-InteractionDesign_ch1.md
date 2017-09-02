@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Reading"
+subheadline: "Interaction Design"
 title: "What is interaction Design"
 teaser: "Interaction Design - Chapter 1 - What is interaction Design"
 header:

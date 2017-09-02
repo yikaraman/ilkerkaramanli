@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Interview"
+subheadline: "Java Interview Questions"
 title: "General Questions about Java"
 teaser: "Basic Questions about Java Job Interview..."
 header:

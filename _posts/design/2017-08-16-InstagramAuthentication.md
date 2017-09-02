@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Development"
+subheadline: "Mobile Development"
 title: "Mobile Appliction Instagram Integration"
 teaser: "How to integrate instagram to your Mobile Application"
 header:
@@ -30,14 +30,11 @@ In order to receive an <strong>access_token</strong>, you must do the following:
 - If the user is not logged in, they will be asked to log in.
 - The user will be asked if they would like to grant your application access to her Instagram data.
 2. The server will redirect the user in one of two ways that you choose:
-- <strong>Server-side flow (recommended)<strong>: Redirect the user to a URI of your choice. Take the provided code parameter and exchange it for an access_token by POSTing the code to our access_token url.
-- <strong>Implicit flow<strong>: Instead of handling a code, we include the access_token as a fragment (#) in the URL. This method is less secure, but allows applications without any server component to receive an access_token.
+- <strong>Server-side flow (recommended)</strong>: Redirect the user to a URI of your choice. Take the provided code parameter and exchange it for an access_token by POSTing the code to our access_token url.
+- <strong>Implicit flow</strong>: Instead of handling a code, we include the access_token as a fragment (#) in the URL. This method is less secure, but allows applications without any server component to receive an access_token.
 
-Important
-Even though our access tokens do not specify an expiration time, your app should handle the case that either the user revokes access, or Instagram expires the token after some period of time. If the token is no longer valid, API responses will contain an “error_type=OAuthAccessTokenException”. In this case you will need to re-authenticate the user to obtain a new valid token.
-In other words: do not assume your access_token is valid forever.
 
-Server-side (Explicit) Flow
+<h3>Server-side (Explicit) Flow<h3>
 Using the server-side flow is quite easy. Simply follow these steps:
 
 Step One: Direct your user to our authorization URL
@@ -53,17 +50,18 @@ Step Two: Receive the redirect from Instagram
 
 Once a user authorizes your application, we issue a redirect to your redirect_uri with a code parameter to use in step three.
 
-http://your-redirect-uri?code=CODE
+> > http://your-redirect-uri?code=CODE
 Note that the host and path components of your redirect URI must match exactly (including trailing slashes) your registered redirect_uri. You may also include additional query parameters in the supplied redirect_uri, if you need to vary your behavior dynamically. Examples:
 
-REGISTERED REDIRECT URI	REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE	VALID?
-http://yourcallback.com/	http://yourcallback.com/	yes
-http://yourcallback.com/	http://yourcallback.com/?this=that	yes
-http://yourcallback.com/?this=that	http://yourcallback.com/	no
-http://yourcallback.com/?this=that	http://yourcallback.com/?this=that&another=true	yes
-http://yourcallback.com/?this=that	http://yourcallback.com/?another=true&this=that	no
-http://yourcallback.com/callback	http://yourcallback.com/	no
-http://yourcallback.com/callback	http://yourcallback.com/callback?type=mobile	yes
+> REGISTERED REDIRECT URI	REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE	VALID?
+> http://yourcallback.com/	http://yourcallback.com/	yes
+> http://yourcallback.com/	http://yourcallback.com/?this=that	yes
+> http://yourcallback.com/?this=that	http://yourcallback.com/	no
+> http://yourcallback.com/?this=that	http://yourcallback.com/?this=that&another=true	yes
+> http://yourcallback.com/?this=that	http://yourcallback.com/?another=true&this=that	no
+> http://yourcallback.com/callback	http://yourcallback.com/	no
+> http://yourcallback.com/callback	http://yourcallback.com/callback?type=mobile	yes
+
 If your request for approval is denied by the user, then we will redirect the user to your redirect_uri with the following parameters:
 
 error: access_denied

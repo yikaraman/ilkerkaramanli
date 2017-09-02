@@ -1,6 +1,6 @@
 ---
 layout: page
-subheadline: "Reading"
+subheadline: "Development Information"
 title: "Everything begins with only two word"
 teaser: "\"Hello World\" is the first program one usually writes.."
 header:
