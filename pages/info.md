@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "About"
-subheadline: "Welcome to personal page of Ilker Karamanli"
-teaser: "Since years I am programming and designing websites. I love to work with open source tools and learn via code from others. This time I want to try to give something back..."
+title: "Projects"
+subheadline: "Projects that I participated in"
+teaser: ""
 permalink: "/info/"
 header:
     image_fullwidth: "header_drop.jpg"
