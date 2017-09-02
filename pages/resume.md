@@ -5,7 +5,7 @@ subheadline: "Welcome to personal page of Ilker Karamanli"
 teaser: "Since years I am programming and designing websites. I love to work with open source tools and learn via code from others. This time I want to try to give something back..."
 permalink: "/resume/"
 header:
-    image_fullwidth: "essential-skills.jpg"
+    image_fullwidth: "ilkerk_resumebanner.jpg"
 ---
 
 | Job Experience
