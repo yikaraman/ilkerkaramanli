@@ -2,7 +2,11 @@
   url: "/"
   side: left
 
-- title: Portfolio
+- title: Resume
+  url: "/resume/"
+  side: left
+
+- title: Projects
   url: "/info/"
   side: left
 
