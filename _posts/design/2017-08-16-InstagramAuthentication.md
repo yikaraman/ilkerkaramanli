@@ -9,7 +9,7 @@ header:
     caption_url: "/"
 image:
     thumb:  instagram_logo.png
-    homepage: instagram_developer.png
+    homepage: instagram_developer.jpg
 categories:
     - Development
 comments: true
