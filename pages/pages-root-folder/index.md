@@ -12,7 +12,7 @@ widget1:
   image: ilkerk.jpg
   text: 'Hello, I am a Senior software developer/Scrum Master. I have always had a passion for development. I have been working in Telecommunication sector. I now have 5 years experience in the industry. I have experience about SIP Protocols, IMS and Web technologies.'
 widget2:
-  title: "Portfolio"
+  title: "Projects"
   url: 'http://yikaraman.github.io/ilkerkaramanli/info/'
   image: computer.jpg
   text: 'Mostly includes my profesional experience. This part is also heavily include my programming Skills. For further individual project details, you can check my <a href="http://github.com/yikaraman/"> GitHub Profile</a>.'
