@@ -43,6 +43,32 @@ Step One: Direct your user to our authorization URL
 
 This \`is not a code\` span!
 
+~~~~~~~~~~~~
+~~~~~~~
+code with tildes
+~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+
+
+myaydkshdsadhkfgdalgdfhaf
+
+-----------
+
+~~~~~~~~
+Here comes some code.
+~~~~~~~~
+
+
+myaydkshdsadhkfgdalgdfhaf
+
+~~~
+def what?
+  42
+end
+~~~
+
+myaydkshdsadhkfgdalgdfhaf
+
 <strong>Note:</strong> You may provide an optional scope parameter to request additional permissions outside of the “basic” permissions scope. Learn more about scope.
 
 <strong>Note</strong>: You may provide an optional state parameter to carry through a server-specific state. For example, you can use this to protect against CSRF issues.
