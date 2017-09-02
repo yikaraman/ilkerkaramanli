@@ -40,6 +40,9 @@ Using the server-side flow is quite easy. Simply follow these steps:
 Step One: Direct your user to our authorization URL
 
 <div markdown="1"> https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code </div>
+
+This \`is not a code\` span!
+
 <strong>Note:</strong> You may provide an optional scope parameter to request additional permissions outside of the “basic” permissions scope. Learn more about scope.
 
 <strong>Note</strong>: You may provide an optional state parameter to carry through a server-specific state. For example, you can use this to protect against CSRF issues.
