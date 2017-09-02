@@ -37,37 +37,11 @@ In order to receive an <strong>access_token</strong>, you must do the following:
 <h3>Server-side (Explicit) Flow</h3>
 Using the server-side flow is quite easy. Simply follow these steps:
 
-Step One: Direct your user to our authorization URL
-
-<div markdown="1"> https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code </div>
-
-This \`is not a code\` span!
-
-~~~~~~~~~~~~
-~~~~~~~
-code with tildes
-~~~~~~~~
-~~~~~~~~~~~~~~~~~~
-
-
-myaydkshdsadhkfgdalgdfhaf
-
------------
+<h4>Step One: Direct your user to our authorization URL</h4>
 
 ~~~~~~~~
-Here comes some code.
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
 ~~~~~~~~
-
-
-myaydkshdsadhkfgdalgdfhaf
-
-~~~
-def what?
-  42
-end
-~~~
-
-myaydkshdsadhkfgdalgdfhaf
 
 <strong>Note:</strong> You may provide an optional scope parameter to request additional permissions outside of the “basic” permissions scope. Learn more about scope.
 
@@ -75,53 +49,73 @@ myaydkshdsadhkfgdalgdfhaf
 
 At this point, we present the user with a login screen and then a confirmation screen where to grant your app access to her Instagram data.
 
-Step Two: Receive the redirect from Instagram
+<h4>Step Two: Receive the redirect from Instagram</h4>
 
 Once a user authorizes your application, we issue a redirect to your redirect_uri with a code parameter to use in step three.
 
-> > http://your-redirect-uri?code=CODE
+~~~~~~~~
+http://your-redirect-uri?code=CODE
+~~~~~~~~
+
 Note that the host and path components of your redirect URI must match exactly (including trailing slashes) your registered redirect_uri. You may also include additional query parameters in the supplied redirect_uri, if you need to vary your behavior dynamically. Examples:
 
-> REGISTERED REDIRECT URI	REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE	VALID?
-> http://yourcallback.com/	http://yourcallback.com/	yes
-> http://yourcallback.com/	http://yourcallback.com/?this=that	yes
-> http://yourcallback.com/?this=that	http://yourcallback.com/	no
-> http://yourcallback.com/?this=that	http://yourcallback.com/?this=that&another=true	yes
-> http://yourcallback.com/?this=that	http://yourcallback.com/?another=true&this=that	no
-> http://yourcallback.com/callback	http://yourcallback.com/	no
-> http://yourcallback.com/callback	http://yourcallback.com/callback?type=mobile	yes
+|--------------------------------------+--------------------------------------------------+---------------------|
+| REGISTERED REDIRECT URI.             | REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE      |VALID?               |
+|--------------------------------------|:-------------------------------------------------|--------------------:|
+| http://yourcallback.com/             |http://yourcallback.com/                          | YES                 |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/             |http://yourcallback.com/?this=that                | YES                 |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/?this=that   |http://yourcallback.com/                          | NO                  |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/?this=that   |http://yourcallback.com/?this=that&another=true   | YES                 |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/?this=that   |http://yourcallback.com/?another=true&this=that   | NO                  |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/callback     |http://yourcallback.com/                          | NO                  |
+|--------------------------------------+--------------------------------------------------+---------------------|
+| http://yourcallback.com/callback.    |http://yourcallback.com/callback?type=mobile      | YES                 |
+|--------------------------------------+--------------------------------------------------+---------------------|
+|======================================+==================================================+=====================|
 
 If your request for approval is denied by the user, then we will redirect the user to your redirect_uri with the following parameters:
 
-error: access_denied
+- <strong>error</strong>: access_denied
 
-error_reason: user_denied
+- <strong>error_reason</strong>: user_denied
 
-error_description: The user denied your request
+- <strong>error_description</strong>: The user denied your request
 
+~~~~~~~~
 http://your-redirect-uri?error=access_denied&error_reason=user_denied&error_description=The+user+denied+your+request
+~~~~~~~~
+
 It is your responsibility to fail gracefully in this situation and display a corresponding error message to your user.
 
-Step Three: Request the access_token
+<h4>Step Three: Request the access_token</h4>
 
 Now you need to exchange the code you have received in the previous step for an access token. In order to make this exchange, you simply have to POST this code, along with some app identification parameters, to our access_token endpoint. These are the required parameters:
 
-client_id: your client id
-client_secret: your client secret
-grant_type: authorization_code is currently the only supported value
-redirect_uri: the redirect_uri you used in the authorization request. Note: this has to be the same value as in the authorization request.
-code: the exact code you received during the authorization step.
+- <strong> client_id</strong>: your client id
+- <strong>client_secret</strong>: your client secret
+- <strong>grant_type</strong>: authorization_code is currently the only supported value
+- <strong>redirect_uri</strong>: the redirect_uri you used in the authorization request. Note: this has to be the same value as in the authorization request.
+- <strong>code</strong>: the exact code you received during the authorization step.
+
 This is a sample request:
 
-
+~~~~~~~~
     curl -F 'client_id=CLIENT_ID' \
     -F 'client_secret=CLIENT_SECRET' \
     -F 'grant_type=authorization_code' \
     -F 'redirect_uri=AUTHORIZATION_REDIRECT_URI' \
     -F 'code=CODE' \
     https://api.instagram.com/oauth/access_token
+~~~~~~~~
+
 If successful, this call will return a neatly packaged OAuth Token that you can use to make authenticated calls to the API. We also include the user who just authenticated for your convenience:
 
+~~~~~~~~
 {
     "access_token": "fb2e77d.47a0479900504cb3ab4a1f626d174d2d",
     "user": {
@@ -131,19 +125,25 @@ If successful, this call will return a neatly packaged OAuth Token that you can 
         "profile_picture": "..."
     }
 }
-Client-Side (Implicit) Authentication
+~~~~~~~~
+
+<h3>Client-Side (Implicit) Authentication</h3>
 If you are building an app that does not have a server component (a purely javascript app, for instance), you will notice that it is impossible to complete step three above to receive your access_token without also having to store the secret on the client. You should never pass or store your client_id secret onto a client. For these situations there is the Implicit Authentication Flow.
 
-Step One: Direct your user to our authorization URL
+<h4>Step One: Direct your user to our authorization URL</h4>
 
+~~~~~~~~
 https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+~~~~~~~~
+
 At this point, we present the user with a login screen and then a confirmation screen where they grant your app’s access to their Instagram data. Note that unlike the explicit flow the response type here is “token”.
 
-Step Two: Receive the access_token via the URL fragment
+<h4>Step Two: Receive the access_token via the URL fragment</h4>
 
 Once the user has authenticated and then authorized your application, Instagram redirects them to your redirect_uri with the access_token in the url fragment. It will look like this:
-
+~~~~~~~~
 http://your-redirect-uri#access_token=ACCESS-TOKEN
+~~~~~~~~
 Simply grab the access_token off the URL fragment and you’re good to go. If the user chooses not to authorize your application, you’ll receive the same error response as in the explicit flow
 
 
