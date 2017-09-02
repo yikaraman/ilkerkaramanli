@@ -1,39 +1,122 @@
 ---
 layout: page
-subheadline: "Reading"
-title: "Facebook Emotional Interaction"
-teaser: "When Technologies manipulate our Emotions"
+subheadline: "Development"
+title: "Mobile Appliction Instagram Integration"
+teaser: "How to integrate instagram to your Mobile Application"
 header:
-    image_fullwidth: "facebook-banner.png"
+    image_fullwidth: "instagrambanner.jpg"
     caption: Image by Ticket Synergy
     caption_url: "/"
 image:
-    thumb:  fb-thumb.png
-    homepage: Facebook-Emotional-Manipulation.jpg
+    thumb:  instagram_logo.png
+    homepage: instagram_developer.png
 categories:
-    - Reading
+    - Development
 comments: true
 show_meta: false
 ---
 
-Nowadays, social media is playing an important role in people’s lives. Facebook, Instagram, Twitter are only some of the social media products. By using those applications, people have the chance to share their personal data every day. The content of the posts can come in a large variety. People can share any information that they want to share such as their personal lives, relational statuses, their emotional states and even their political views. However, too much information becomes irritating for people who are using social media, especially some posts and contents that include violence.
+<h2>Instagram Authentication</h2>
+The Instagram API uses the <strong>OAuth 2.0 protocol</strong> for simple, but effective authentication and authorization. OAuth 2.0 is much easier to use than previous schemes and developers can start using the Instagram API almost immediately. The one thing to keep in mind is that all requests to the API must be made over SSL (<strong>https://</strong> not http://).
 
-Too much data has always been a problem for designers and end users. On designer’s perspective, designers try not to show so many shared posts. Those posts could be a reason for capacity and performance issues. On the other hand, on the customer perspective, users get bothered to see posts that have violence, vandalism, bad words, un-motivational posts and these can affect people’s physical condition. Designers came up with a solution to solve this problem with feed filtering. Many social media tools use algorithms to show posts in their feeds according to their content, people who shared these contents (close friends) and emotions in the posts. However, deciding a correct algorithm to show shared posts with the wanted content is still a problematic issue. Facebook filters messages in Newsfeeds, because it is not possible or practical to show all updates. And according to researchers, Facebook uses an algorithm to classify posts to emotionally positive or negative content.
+<h3>Do you need to authenticate?</h3>
 
-In my opinion, I found this algorithm to show the content of the shared posts is helpful for people who are using Facebook. People are using Facebook to gather information on a daily basis, to know other people’s lives, and to spend some fun time. This is the key point of the social media. Hence, classifying the content of the posts help people to see more motivational content. Of course, that doesn’t mean always show funny kitty videos. Facebook also gives a chance to people to customize their Facebook feeds. In that manner, people have the chance to see posts in their feeds on a specific content. Facebook also suggests a content that you like during your usage. With the help of this working principle, I find this approach plausible.
+The Instagram API requires authentication - specifically requests made on behalf of a user. Authenticated requests require an access_token. These tokens are unique to a user and should be stored securely. Access tokens may expire at any time in the future.
 
-With the changing technology, there are so many ways to gather information about the emotional states of people. Social media, smart phones, and smart watches are some of the highlights of the today’s technology. The applications such as “beat stress” can monitor a user’s emotional state. Smart watches are the new way of collecting information from users. By analyzing the person’s location, weather, environmental noise level, e-mails and phone calls can make a statistical data for the person’s emotional state. This is the best development for the people who have stress in their lives. This product can be improved towards getting insights on the emotional level of users, and according to their level of emotion, providing a solution with content, giving motivational examples and words and even blocking calls and emails for a while.
+<h3>Receiving an access_token</h3>
+In order to receive an <strong>access_token</strong>, you must do the following:
 
-Emotion sensing is another smartphone application for mood tracking. People have a chance to log their emotional state on a daily and weekly basis. Using smartphones’ accelerometers and GPS creates a pattern on how much time is spent in areas and what are the emotional states of people during this period. I had a chance to use this application for a month. I believe, this could be integrated with the social media and calendar of the smartphone.
+1. Direct the user to our authorization url.
+- If the user is not logged in, they will be asked to log in.
+- The user will be asked if they would like to grant your application access to her Instagram data.
+2. The server will redirect the user in one of two ways that you choose:
+- <strong>Server-side flow (recommended)<strong>: Redirect the user to a URI of your choice. Take the provided code parameter and exchange it for an access_token by POSTing the code to our access_token url.
+- <strong>Implicit flow<strong>: Instead of handling a code, we include the access_token as a fragment (#) in the URL. This method is less secure, but allows applications without any server component to receive an access_token.
 
-To sum up, manipulating peoples’ emotional states in a motivational way is helpful for the future. With the changing technology, the content of the posts and classifying the true content will be enhanced.
+Important
+Even though our access tokens do not specify an expiration time, your app should handle the case that either the user revokes access, or Instagram expires the token after some period of time. If the token is no longer valid, API responses will contain an “error_type=OAuthAccessTokenException”. In this case you will need to re-authenticate the user to obtain a new valid token.
+In other words: do not assume your access_token is valid forever.
+
+Server-side (Explicit) Flow
+Using the server-side flow is quite easy. Simply follow these steps:
+
+Step One: Direct your user to our authorization URL
+
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=code
+Note: You may provide an optional scope parameter to request additional permissions outside of the “basic” permissions scope. Learn more about scope.
+
+Note: You may provide an optional state parameter to carry through a server-specific state. For example, you can use this to protect against CSRF issues.
+
+At this point, we present the user with a login screen and then a confirmation screen where to grant your app access to her Instagram data.
+
+Step Two: Receive the redirect from Instagram
+
+Once a user authorizes your application, we issue a redirect to your redirect_uri with a code parameter to use in step three.
+
+http://your-redirect-uri?code=CODE
+Note that the host and path components of your redirect URI must match exactly (including trailing slashes) your registered redirect_uri. You may also include additional query parameters in the supplied redirect_uri, if you need to vary your behavior dynamically. Examples:
+
+REGISTERED REDIRECT URI	REDIRECT_URI PARAMETER PASSED TO /AUTHORIZE	VALID?
+http://yourcallback.com/	http://yourcallback.com/	yes
+http://yourcallback.com/	http://yourcallback.com/?this=that	yes
+http://yourcallback.com/?this=that	http://yourcallback.com/	no
+http://yourcallback.com/?this=that	http://yourcallback.com/?this=that&another=true	yes
+http://yourcallback.com/?this=that	http://yourcallback.com/?another=true&this=that	no
+http://yourcallback.com/callback	http://yourcallback.com/	no
+http://yourcallback.com/callback	http://yourcallback.com/callback?type=mobile	yes
+If your request for approval is denied by the user, then we will redirect the user to your redirect_uri with the following parameters:
+
+error: access_denied
+
+error_reason: user_denied
+
+error_description: The user denied your request
+
+http://your-redirect-uri?error=access_denied&error_reason=user_denied&error_description=The+user+denied+your+request
+It is your responsibility to fail gracefully in this situation and display a corresponding error message to your user.
+
+Step Three: Request the access_token
+
+Now you need to exchange the code you have received in the previous step for an access token. In order to make this exchange, you simply have to POST this code, along with some app identification parameters, to our access_token endpoint. These are the required parameters:
+
+client_id: your client id
+client_secret: your client secret
+grant_type: authorization_code is currently the only supported value
+redirect_uri: the redirect_uri you used in the authorization request. Note: this has to be the same value as in the authorization request.
+code: the exact code you received during the authorization step.
+This is a sample request:
 
 
-<h6><em>REFERENCES</em></h6>
-- <cite>["When Technologies Manipulate our Emotions", by Calvo, Peters, D’Mello, Comm ACM, 58(11), 41-42, November 2015][1]</cite>
-- <cite>[Smartphone app that claims to beat stress and can monitor the user's emotional state, Retrieved from Internet Nov 23, 2015.][2]</cite>
-<h6><em>SPECIAL THANKS</em></h6>
-<em>I wish to express a sincere thank you to <cite>[Eylul Tuvan]</cite> who so graciously agreed to help me about my study.</em>
+    curl -F 'client_id=CLIENT_ID' \
+    -F 'client_secret=CLIENT_SECRET' \
+    -F 'grant_type=authorization_code' \
+    -F 'redirect_uri=AUTHORIZATION_REDIRECT_URI' \
+    -F 'code=CODE' \
+    https://api.instagram.com/oauth/access_token
+If successful, this call will return a neatly packaged OAuth Token that you can use to make authenticated calls to the API. We also include the user who just authenticated for your convenience:
 
-[1]:https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiL983Qx93JAhWi93IKHUqlDSkQFggcMAA&url=http%3A%2F%2Fcacm.acm.org%2Fmagazines%2F2015%2F11%2F193334-when-technologies-manipulate-our-emotions%2Ffulltext&usg=AFQjCNGQbG8FdyPfxa85OD64wrR67zqlUQ&sig2=77abj4Ms9L6dWNE55XlGfw
-[2]:http://www.dailymail.co.uk/news/article-2299179/Smartphone-app-claims-beat-stress-monitor-users-emotional-state.html
+{
+    "access_token": "fb2e77d.47a0479900504cb3ab4a1f626d174d2d",
+    "user": {
+        "id": "1574083",
+        "username": "snoopdogg",
+        "full_name": "Snoop Dogg",
+        "profile_picture": "..."
+    }
+}
+Client-Side (Implicit) Authentication
+If you are building an app that does not have a server component (a purely javascript app, for instance), you will notice that it is impossible to complete step three above to receive your access_token without also having to store the secret on the client. You should never pass or store your client_id secret onto a client. For these situations there is the Implicit Authentication Flow.
+
+Step One: Direct your user to our authorization URL
+
+https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+At this point, we present the user with a login screen and then a confirmation screen where they grant your app’s access to their Instagram data. Note that unlike the explicit flow the response type here is “token”.
+
+Step Two: Receive the access_token via the URL fragment
+
+Once the user has authenticated and then authorized your application, Instagram redirects them to your redirect_uri with the access_token in the url fragment. It will look like this:
+
+http://your-redirect-uri#access_token=ACCESS-TOKEN
+Simply grab the access_token off the URL fragment and you’re good to go. If the user chooses not to authorize your application, you’ll receive the same error response as in the explicit flow
+
+
