@@ -34,7 +34,7 @@ In order to receive an <strong>access_token</strong>, you must do the following:
 - <strong>Implicit flow</strong>: Instead of handling a code, we include the access_token as a fragment (#) in the URL. This method is less secure, but allows applications without any server component to receive an access_token.
 
 
-<h3>Server-side (Explicit) Flow<h3>
+<h3>Server-side (Explicit) Flow</h3>
 Using the server-side flow is quite easy. Simply follow these steps:
 
 Step One: Direct your user to our authorization URL
