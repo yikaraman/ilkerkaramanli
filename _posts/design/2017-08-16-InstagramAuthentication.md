@@ -14,7 +14,6 @@ categories:
     - Development
 comments: true
 show_meta: true
-sidebar: left
 ---
 
 <h2>Instagram Authentication</h2>
