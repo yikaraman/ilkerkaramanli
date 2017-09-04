@@ -271,6 +271,17 @@ Let's <mark>mark this hint</mark> to give you a clue.
 
 
 
+### &lt;alert&gt;
+
+Checkout for example `alert`:
+
+{% include alert success="Yay! you did it!" %}
+
+or
+
+{% include gallery %}
+
+
 ### &lt;br&gt;
 
 Need a break? I give you three!<br><br><br>
@@ -308,6 +319,9 @@ If you need footnotes for your posts, articles and entries, the Kramdown-Parser 
 ##### &lt;h5&gt;-Heading in Volkhov
 
 ###### &lt;h6&gt;-Heading in Volkhov
+
+
+
 
 
 ## Tables
