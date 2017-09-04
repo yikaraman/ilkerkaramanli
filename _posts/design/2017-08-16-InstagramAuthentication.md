@@ -13,7 +13,8 @@ image:
 categories:
     - Development
 comments: true
-show_meta: false
+show_meta: true
+sidebar: left
 ---
 
 <h2>Instagram Authentication</h2>
