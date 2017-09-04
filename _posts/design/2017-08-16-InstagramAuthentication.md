@@ -14,6 +14,7 @@ categories:
     - Development
 comments: true
 show_meta: true
+show_meta: true
 ---
 
 <h2>Instagram Authentication</h2>
