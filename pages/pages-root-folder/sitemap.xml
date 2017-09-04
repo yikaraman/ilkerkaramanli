@@ -14,4 +14,19 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {% include sitemap_collection.xml links=site.pages name="Pages" priority=0.3 changefreq='monthly' %}
 {% include sitemap_collection.xml links=site.posts name="Posts" priority=0.5 changefreq='monthly' %}
+
+<url>
+  <loc>http://www.ilkerkaramanli.com/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+
+    <loc>http://www.ilkerkaramanli.com</loc>
+    <image:image>
+
+        <image:loc>https://yikaraman.github.io/ilkerkaramanli/images/ilkerk.jpg</image:loc>
+    </image:image>
+
+</url>
 </urlset>
