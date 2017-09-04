@@ -13,7 +13,7 @@ image:
 categories:
     - Reading
 comments: true
-show_meta: false
+show_meta: true
 ---
 
 <strong>1.1 Introduction</strong><br>

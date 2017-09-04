@@ -13,7 +13,7 @@ image:
 categories:
     - Interview
 comments: true
-show_meta: false
+show_meta: true
 ---
 
 1. What does the “static” keyword mean? Can you override private or static method in Java?
