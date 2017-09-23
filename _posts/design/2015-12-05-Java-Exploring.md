@@ -14,6 +14,7 @@ categories:
     - Reading
 comments: true
 show_meta: true
+sidebar: left
 ---
 
 Void

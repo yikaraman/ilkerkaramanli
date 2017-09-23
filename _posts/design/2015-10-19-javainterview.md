@@ -13,6 +13,7 @@ image:
 categories:
     - Interview
 comments: true
+sidebar: left
 show_meta: true
 ---
 

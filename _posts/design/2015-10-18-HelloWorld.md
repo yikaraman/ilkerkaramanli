@@ -14,6 +14,7 @@ categories:
     - Reading
 comments: true
 show_meta: true
+sidebar: left
 ---
 
 The quote “Hello world!” has been used since the 1960’s as the output of the first program written by most developers. Outputting this simple line of text is generally easy enough for beginners to accomplish, and it also serves as a sanity test to make sure that a given compiler, environment and associated run-times are correctly installed and functioning. As such, it’s also an apt title for the first post on a newly-created website. This is one such post.
