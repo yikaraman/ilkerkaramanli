@@ -14,7 +14,7 @@ categories:
     - Development
 comments: true
 show_meta: true
-sidebar: left
+sidebar: right
 show_meta: true
 ---
 

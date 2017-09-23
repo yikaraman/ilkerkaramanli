@@ -14,7 +14,7 @@ categories:
     - Reading
 comments: true
 show_meta: true
-sidebar: left
+sidebar: right
 ---
 
 <strong>1.1 Introduction</strong><br>
